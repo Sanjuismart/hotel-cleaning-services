@@ -1,0 +1,81 @@
+.banner {
+  min-height: 90vh;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("https://media.istockphoto.com/id/1078368630/photo/spa-background-with-a-space-for-a-text.jpg?s=1024x1024&w=is&k=20&c=yGdyDPqLIBzJogA72FSMHhDcPNBRPEbiR4iwWaUo0xE=")
+      center/cover no-repeat;
+
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+  
+  height: 80vh;
+}
+
+.banner-content {
+  max-width: 400px;
+  color: #fff;
+}
+
+.banner-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1px;
+}
+
+.banner-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.banner-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: white;
+}
+
+.btn-secondary {
+  background: white;
+  color: #111;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-secondary:hover {
+  background: #f3f4f6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .banner {
+    padding: 0 20px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .banner-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .banner-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
