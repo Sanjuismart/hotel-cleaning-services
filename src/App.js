@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
-import Banner from "./Banner";
-import HotelCleaning from "./HotelCleaning";
+// import Banner from "./Banner";
+// import HotelCleaning from "./HotelCleaning";
 import AboutUs from "./AboutUs";
 import Home  from "./Home";
 import Dropone from "./Dropone";
