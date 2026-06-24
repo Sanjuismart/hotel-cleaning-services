@@ -7,14 +7,15 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-    <div className="logo">
+      <div className="logo">
         <img
-        src="https://cdn-icons-png.flaticon.com/128/10725/10725239.png"
-      height={60}
-      width={70}
+          src="https://cdn-icons-png.flaticon.com/128/10725/10725239.png"
+          alt="Hotel Cleaning Services Logo"
+          height={60}
+          width={70}
         />
       </div>
-      
+
       <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
         <li><Link to="/Home">Home</Link></li>
         <li><Link to="/AboutUs">About Us</Link></li>
@@ -22,8 +23,7 @@ const Navbar = () => {
         <li className="dropdown">
           <a href="/">Services ▾</a>
           <ul className="dropdown-menu">
-             <li><Link to="/dropone">Room Cleaning & Sanitization</Link></li>
-          
+            <li><Link to="/dropone">Room Cleaning & Sanitization</Link></li>
             <li><Link to="/Droptow">Carpet & Floor Maintenance</Link></li>
             <li><Link to="/Dropthree">Bathroom Deep Cleaning</Link></li>
           </ul>
@@ -32,16 +32,8 @@ const Navbar = () => {
         <li><Link to="/Contact">Contact Us</Link></li>
         <li><Link to="/VideoGallery">Gallery</Link></li>
         <li><a href="/blog">Blog</a></li>
-        <button> <Link to="/Contact">Enquire Now</Link> </button>
+        <button><Link to="/Contact">Enquire Now</Link></button>
       </ul>
-
-      {/* <div className="logo">
-        <img
-        src="https://cdn-icons-png.flaticon.com/128/10725/10725239.png"
-      height={60}
-      width={70}
-        />
-      </div> */}
 
       <div
         className="hamburger"
